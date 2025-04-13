@@ -7,7 +7,7 @@ app.use(cors());
 app.use(express.json());
 
 // ✅ URL directa al archivo RAW de GitHub
-const CODIGOS_URL = 'https://raw.githubusercontent.com/MalwareTechPython/logeo/main/codigos';
+const CODIGOS_URL = 'https://raw.githubusercontent.com/MalwareTechPython/logeo/main/codigos.txt';
 
 app.post('/validar', async (req, res) => {
   const { code } = req.body;
